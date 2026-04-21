@@ -29,6 +29,7 @@ let user: {
     role: {
         description: 'admin',
         id: 5
-    }
-        
+    }       
 };
+
+let val: {} ='is a value';

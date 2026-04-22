@@ -1,11 +1,11 @@
-enum Role {
-    Admin,
-    Editor,
-    Guest,
-}
+// enum Role {
+//     Admin,
+//     Editor,
+//     Guest,
+// }
 
-let userRole: Role = Role.Admin;
+let userRole: 'admin' | 'editor' | 'guest' = 'admin';
 
 // ...
 
-userRole = Role.Guest;
+userRole = 'guest';

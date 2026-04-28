@@ -4,6 +4,15 @@
 //     Guest,
 // }
 
+// type MyNumber = number;
+type Role = 'admin' | 'editor' | 'guest' | 'reader';
+type User = {
+    name: string;
+    age: number;
+    role: Role;
+    permissions: string[];
+};
+
 let userRole: 'admin' | 'editor' | 'guest' | 'reader' = 'admin';
 
 // ...
@@ -14,6 +23,6 @@ let possibleResults: [1 | -1, 1 | -1]; // [1, -1]
 
 possibleResults = [1, -1];
 
-function access(role: 'admin' | 'editor' | 'guest' | 'reader') {
+function access(role: Role) {
     // ...
 }

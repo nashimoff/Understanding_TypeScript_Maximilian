@@ -10,3 +10,14 @@ function logAndThrow(errorMessage: string): never {
     console.log(errorMessage);
     throw new Error(errorMessage);
 }
+
+const logMsg = (msg: string) => {
+    console.log(msg);
+};
+
+function performJob(cb: (msg: string) => void) {
+    // ...
+    cb('Job done!');
+}
+
+performJob(log);

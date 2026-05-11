@@ -21,3 +21,20 @@ function performJob(cb: (msg: string) => void) {
 }
 
 performJob(log);
+
+type User = {
+    name: string;
+    age: number;
+    greet: () => string;
+};
+
+let user: User = {
+    name: 'Max',
+    age: 39,
+    greet() {
+        console.log('Hell there!');
+        return this.name;
+    },
+}
+
+user.greet();
